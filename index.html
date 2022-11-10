@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simon</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+
+<body>
+  <h1 id="level-title">The Simon Game</h1>
+  <div class="rules">
+    
+    <h2>Rules of the Game:</h2>
+  <p>Level 1. The computer will flash a random button. Click on that button.</p>
+  <p>Level 2. The computer will flash another random button.Click on the button that you previously clicked in Level 1 and then the button that computer flashed just now.</p>
+  <p>So, the computer will flash one button in each level. You have to remember all the previous clicks done from Level 1 to the current Level and click on the butttons in the same order.</p>
+  </div>
+  <div class="startButton">
+  <button class="start"><h3>Start</h3></button>
+</div>
+  
+  <div class="container">
+    <div class="row row-cols-lg-2">
+
+      <div type="button" id="green" class="btn green">
+
+      </div>
+
+      <div type="button" id="red" class="btn red">
+
+      </div>
+    </div>
+
+    <div class="row row-cols-lg-2">
+
+      <div type="button" id="yellow" class="btn yellow">
+
+      </div>
+      <div type="button" id="blue" class="btn blue">
+
+      </div>
+
+    </div>
+
+  </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="game.js"></script>
+</body>
+
+</html>
