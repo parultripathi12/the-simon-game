@@ -35,7 +35,7 @@ function nextSequence()
     userGamePattern=[];
     level++;
     $("h1").text("Level "+level);
-    var randomNumber=Math.floor((Math.random()*3)+1);
+    var randomNumber=Math.floor((Math.random()*3));
     var randomChosenColor = buttonColors[randomNumber];
     $("#"+randomChosenColor).fadeIn().fadeOut().fadeIn();
     playSound(randomChosenColor);
